@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scroll and Hover Navigation Menu</title>
+    <link rel="stylesheet" href="task1.css">
+    <script src="task1.js" defer></script>
+</head>
+<body>
+    <nav class="navbar" id="navbar">
+        <a href="#home" class="logo">WEB<span>SITE</span></a>
+
+        <button class="menu-toggle" id="menuToggle"
+                aria-label="Toggle navigation" aria-expanded="false">☰</button>
+
+        <ul class="nav-links" id="navLinks">
+            <li><a href="#home" class="nav-link active">Home</a></li>
+            <li><a href="#about" class="nav-link">About</a></li>
+            <li><a href="#services" class="nav-link">How it works</a></li>
+            <li><a href="#portfolio" class="nav-link">Tools</a></li>
+            <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section id="home" class="section home">
+        <div class="content">
+            <span class="tag">HTML + CSS + JAVASCRIPT</span>
+            <h1>Scroll the page. <span>Watch the menu change.</span></h1>
+            <p>
+                This menu stays fixed at the top. It changes color when you
+                scroll and when you hover over an item.
+            </p>
+            <a href="#about" class="button">Try it ↓</a>
+        </div>
+        <div class="hero-circle"></div>
+    </section>
+
+    <section id="about" class="section about">
+        <div class="section-content">
+            <span class="tag">ABOUT</span>
+            <h2>Why a fixed menu?</h2>
+            <p>
+                A fixed menu is always on screen, so a visitor can jump to
+                any part of the page without scrolling back up. I wrote it
+                as an internship task to practise HTML, CSS and JavaScript
+                together.
+            </p>
+        </div>
+    </section>
+
+    <section id="services" class="section services">
+        <div class="section-content">
+            <span class="tag">HOW IT WORKS</span>
+            <h2>Three parts, three jobs</h2>
+
+            <div class="cards">
+                <article class="card">
+                    <div class="card-icon">❮❯</div>
+                    <h3>HTML</h3>
+                    <p>Builds the structure: the logo, the menu button and the list of links.</p>
+                </article>
+
+                <article class="card">
+                    <div class="card-icon">✦</div>
+                    <h3>CSS</h3>
+                    <p>Sets the colors, the hover effect and the layout for phone and desktop.</p>
+                </article>
+
+                <article class="card">
+                    <div class="card-icon">↕</div>
+                    <h3>JavaScript</h3>
+                    <p>Watches the scroll position and changes the navbar color and active link.</p>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <section id="portfolio" class="section portfolio">
+        <div class="section-content">
+            <span class="tag">TOOLS</span>
+            <h2>Nothing extra needed.</h2>
+            <p>
+                The whole project runs from three files and a browser. There
+                are no libraries or frameworks.
+            </p>
+            <div class="project-label">TASK 1 &bull; NAVIGATION MENU</div>
+        </div>
+    </section>
+
+    <section id="contact" class="section contact">
+        <div class="section-content">
+            <span class="tag">CONTACT</span>
+            <h2>That's the demo.</h2>
+            <p>Thanks for scrolling all the way down.</p>
+            <a href="#home" class="button">Back to top ↑</a>
+        </div>
+    </section>
+
+    <footer>
+        <p>© <span id="year"></span> Scroll and Hover Navigation Menu</p>
+    </footer>
+
+</body>
+</html>
